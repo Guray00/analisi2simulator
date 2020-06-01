@@ -91,7 +91,7 @@ const commands = Telegraf.Extra
 
 
 
-bot.start((ctx) => ctx.reply('Ciao! Benvenuto, seleziona un comando dalla tastiera o usando quelli disponibili preceduti da "/"', commands))
+bot.start((ctx) => ctx.reply('Ciao! Benvenuto, seleziona un comando dalla tastiera o usando quelli disponibili preceduti da "/"\n\nTi ricordo che questo bot è frutto dell\'opera volontaria degli studenti, quindi è probabile che manchi del materiale, in tal caso segnalalo per rendere il tutto più funzionale!', commands))
 bot.help((ctx) => ctx.reply('Per eseguire un comando utilizza la tastiera o digita /+comando', commands))
 
 //commands
