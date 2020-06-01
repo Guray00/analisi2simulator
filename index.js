@@ -130,12 +130,12 @@ bot.command("simulazione", async (ctx) =>{
     ctx.replyWithHTML(data)
 })
 
-bot.command("listaTeoremi", async (ctx) =>{
+bot.command("listath", async (ctx) =>{
     let data = await listTeoremi()
     ctx.replyWithHTML("<b>Teoremi</b>\n"+data)
 })
 
-bot.command("listaDefinizioni", async (ctx) =>{
+bot.command("listadef", async (ctx) =>{
     let data = await listDefinizioni()
     ctx.replyWithHTML("<b>Definizioni</b>\n"+data)
 })
