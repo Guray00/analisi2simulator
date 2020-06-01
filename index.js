@@ -77,35 +77,43 @@ bot.use(async (ctx, next) => {
     const start = new Date()
     await next()
     const ms = new Date() - start
-    console.log('Response time: %sms', ms)
+    console.log('Response time: %sms by '+ctx.message.from.username, ms)
 })
 
 const commands = Telegraf.Extra
     .markdown()
     .markup((m) => m.keyboard([
-        [m.callbackButton('Simulazione', 'simulazione')],
-        [m.callbackButton('Definizione', 'monkeyuser'), m.callbackButton('Teorema', 'commitstrip')], 
-        [m.callbackButton('Lista Def', 'Lista def'), m.callbackButton('Lista Th', 'Lista def')],
+        [m.callbackButton('Simulazione')],
+        [m.callbackButton('Definizione'), m.callbackButton('Teorema')], 
+        [m.callbackButton('Lista Def'), m.callbackButton('Lista Th')],
         [m.callbackButton("Segnala Definizione / Teorema")]
     ]))
 
 
 
-bot.start((ctx) => ctx.reply('Welcome', commands))
-bot.help((ctx) => ctx.reply('Send me a sticker'))
-bot.on('sticker', (ctx) => ctx.reply('👍'))
-bot.hears('hi', (ctx) => ctx.reply('Hey there'))
+bot.start((ctx) => ctx.reply('Ciao! Benvenuto, seleziona un comando dalla tastiera o usando quelli disponibili preceduti da "/"', commands))
+bot.help((ctx) => ctx.reply('Per eseguire un comando utilizza la tastiera o digita /+comando', commands))
 
 //commands
 
+/*
 bot.command("addth", (ctx)=>{
     //console.log(ctx.message.from.id)
     if(ctx.message.from.id != "163506608") return
     fs.appendFile('./source/teoremi.txt', "\n"+ctx.message.text.replace("/addth ", ""), function (err) {
         if (err) throw err;
-        console.log('Saved!');
+        console.log('Aggiunto!');
     });
 })
+
+bot.command("adddef", (ctx)=>{
+    //console.log(ctx.message.from.id)
+    if(ctx.message.from.id != "163506608") return
+    fs.appendFile('./source/definizioni.txt', "\n"+ctx.message.text.replace("/addth ", ""), function (err) {
+        if (err) throw err;
+        console.log('Aggiunto!');
+    });
+})*/
 
 
 bot.command("definizione", async (ctx) =>{
@@ -135,10 +143,10 @@ bot.command("listaDefinizioni", async (ctx) =>{
 
 
 
-/*
+/********************************************
     hears
 
-*/
+********************************************/ 
 
 bot.hears("Definizione", async (ctx) =>{
     ctx.reply(await getDefinition())
@@ -165,7 +173,7 @@ bot.hears("Lista Def", async (ctx) =>{
 })
 
 bot.hears("Segnala Definizione / Teorema", async (ctx) =>{
-    ctx.reply("Ciao! Visto che anche noi stiamo studiando analisi2, mettere qui un trigger implicava studiare meno analisi... Quindi, please puoi scrivere a @gray00 o sul gruppo di @inginfunipi segnalando cosa manca? Grazie <3");
+    ctx.reply("Ciao! Visto che anche noi stiamo studiando analisi2, mettere qui un trigger implicava studiare meno analisi... Quindi, please puoi scrivere a @gray00 o sul gruppo di @inginfunipi segnalando cosa manca? Grazie ❤️");
 })
 
 bot.launch()
