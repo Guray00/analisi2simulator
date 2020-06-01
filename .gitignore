@@ -1,5 +1,6 @@
 .env
 package-lock.json
+.users
 # Logs
 logs
 *.log

@@ -77,7 +77,19 @@ bot.use(async (ctx, next) => {
     const start = new Date()
     await next()
     const ms = new Date() - start
-    console.log('Response time: %sms by '+ctx.message.from.username, ms)
+
+    let usr = ctx.message.from.username
+    console.log('Response time: %sms by '+usr, ms)
+
+    let data = await (await readFile('./.users',"utf8")).split("\n")
+
+    if(data.indexOf("@"+usr) == -1){
+        fs.appendFile('./.users', "\n@"+usr.toString(), function (err) {
+            if (err) throw err;
+            console.log('New user!');
+        });
+    }
+    
 })
 
 const commands = Telegraf.Extra
@@ -114,6 +126,15 @@ bot.command("adddef", (ctx)=>{
         console.log('Aggiunto!');
     });
 })*/
+
+bot.command("users", async(ctx)=>{
+    //console.log(ctx.message.from.id)
+    if(ctx.message.from.id != "163506608") return
+    let data = await (await readFile('./.users',"utf8"))
+
+    let size = data.split("\n").length
+    ctx.replyWithHTML("<b>Users - "+size+"</b>\n"+data)
+})
 
 
 bot.command("definizione", async (ctx) =>{
