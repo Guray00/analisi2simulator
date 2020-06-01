@@ -1,0 +1,23 @@
+{
+  "name": "analisi2simulator",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guray00/analisi2simulator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Guray00/analisi2simulator/issues"
+  },
+  "homepage": "https://github.com/Guray00/analisi2simulator#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "telegraf": "^3.38.0"
+  }
+}

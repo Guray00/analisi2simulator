@@ -1,0 +1,5 @@
+Teorema del Dini in C(0)
+Teorema del Dini in C(1)
+Lemma Fondamentale dell'algebra
+Lemma di Hermite
+Teorema Rettificabilità
