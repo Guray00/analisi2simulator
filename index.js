@@ -77,14 +77,17 @@ bot.use(async (ctx, next) => {
     const start = new Date()
     await next()
     const ms = new Date() - start
-
+    
     let usr = ctx.message.from.username
+
+    if (usr == undefined) usr = "id->"+ctx.message.from.id
+    else usr = "@"+usr
     console.log('Response time: %sms by '+usr, ms)
 
     let data = await (await readFile('./.users',"utf8")).split("\n")
 
-    if(data.indexOf("@"+usr) == -1){
-        fs.appendFile('./.users', "\n@"+usr.toString(), function (err) {
+    if(data.indexOf(usr) == -1){
+        fs.appendFile('./.users', "\n"+usr, function (err) {
             if (err) throw err;
             console.log('New user!');
         });
@@ -132,7 +135,7 @@ bot.command("users", async(ctx)=>{
     if(ctx.message.from.id != "163506608") return
     let data = await (await readFile('./.users',"utf8"))
 
-    let size = data.split("\n").length
+    let size = data.split("\n").length - 1
     ctx.replyWithHTML("<b>Users - "+size+"</b>\n"+data)
 })
 
