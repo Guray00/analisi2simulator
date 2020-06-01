@@ -20,6 +20,49 @@ Insieme cono
 Successione limitata
 Matrice Jacobiana
 Curva parametrica regolare
-Forma chiusa
 Punto esterno
 Successione di vettori convergente
+Convessità
+Insieme di livello
+Limiti (Tutte le tipologie)
+Teorema di Weierstrass
+Limiti di forme quadratiche
+Stella
+Funzione α-omogenea
+Prodotto e rapporto di funzioni omogenee
+Potenze di funzioni omogenee
+Condizione di Cauchy
+Punto di minimo locale
+Punto di massimo locale
+Derivata parziale
+Differenziale
+Gradiente
+Rappresentazione del differenziale
+Differenziabilità di funzioni composte
+Direzione di massima pendenza
+Retta tangente 
+Partizione
+Poligonale
+Lunghezza della poligonale inscritta un una curva
+Rettificabilità
+Curva semplice (senza fiocchi)
+Curva chiusa
+Curva regolare
+Curva generalmente regolare (a tratti)
+Integrale curvilineo
+Curve equivalenti
+Derivate successive
+Teorema di Clairaut-Schwarz (solo enunciato)
+Formula di Taylor
+Matrice hessiana
+Massimo locale (hessiana)
+Minimo locale (hessiana)
+Sella (hessiana)
+Matrice hessiana non degenere
+Teorema di Invarianza omotopica (solo enunciato)
+Curva parametrica
+Potenziale Newtoniano
+Teorema (formula) Fubini-Tonelli
+Dominio normale rispetto all’asse X
+Dominio normale rispetto all’asse Y
+Cambio di variabili (Integrali)
