@@ -66,3 +66,15 @@ Teorema (formula) Fubini-Tonelli
 Dominio normale rispetto all’asse X
 Dominio normale rispetto all’asse Y
 Cambio di variabili (Integrali)
+Punto interno
+Punto di accumulazione
+Punto isolato
+Insieme compatto
+Distanza vettoriale 
+Sfera aperta
+Piano tangente
+Spazio tangente 
+Integrale di campo
+Coordinate polari e sferiche 
+Punto di max/min globali
+Campo associato
