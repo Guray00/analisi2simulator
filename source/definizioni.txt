@@ -1,11 +1,7 @@
 Punto di frontiera 
-Derivata direzionali 
-Lunghezza di una curva 
 Forma chiusa
 Insieme connesso
 Funzione limitata
-Derivata direzionale
-Rettificabilità
 Forma lineare
 Retta tangente ad una curva regolare
 Insieme chiuso
@@ -13,13 +9,11 @@ Funzione limitata
 Insieme limitato
 Successione non limitata
 Differenziabilità
-Curva parametrica chiusa
 Forma esatta
 superficie parametrica
 Insieme cono
 Successione limitata
 Matrice Jacobiana
-Curva parametrica regolare
 Punto esterno
 Successione di vettori convergente
 Convessità
@@ -34,7 +28,9 @@ Potenze di funzioni omogenee
 Condizione di Cauchy
 Punto di minimo locale
 Punto di massimo locale
+Derivata direzionale
 Derivata parziale
+Derivate successive
 Differenziale
 Gradiente
 Rappresentazione del differenziale
@@ -43,15 +39,18 @@ Direzione di massima pendenza
 Retta tangente 
 Partizione
 Poligonale
-Lunghezza della poligonale inscritta un una curva
-Rettificabilità
 Curva semplice (senza fiocchi)
 Curva chiusa
 Curva regolare
 Curva generalmente regolare (a tratti)
+Curva rettificabile
+Curva parametrica
+Curva parametrica regolare
+Curva parametrica chiusa
+Lunghezza di una curva 
+Lunghezza della poligonale inscritta un una curva
 Integrale curvilineo
 Curve equivalenti
-Derivate successive
 Teorema di Clairaut-Schwarz (solo enunciato)
 Formula di Taylor
 Matrice hessiana
@@ -60,7 +59,6 @@ Minimo locale (hessiana)
 Sella (hessiana)
 Matrice hessiana non degenere
 Teorema di Invarianza omotopica (solo enunciato)
-Curva parametrica
 Potenziale Newtoniano
 Teorema (formula) Fubini-Tonelli
 Dominio normale rispetto all’asse X
