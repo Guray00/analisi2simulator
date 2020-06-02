@@ -87,7 +87,7 @@ bot.use(async (ctx, next) => {
     let data = await (await readFile('./.users',"utf8")).split("\n")
 
     if(data.indexOf(usr) == -1){
-        fs.appendFile('./.users', "\n"+usr, function (err) {
+        fs.appendFile('./.users', usr, function (err) {
             if (err) throw err;
             console.log('New user!');
         });

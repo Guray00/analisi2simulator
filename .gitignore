@@ -1,6 +1,7 @@
 .env
 package-lock.json
 .users
+deploy.sh
 # Logs
 logs
 *.log
