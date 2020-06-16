@@ -1,6 +1,7 @@
 Se una successione è convergente, allora è limitata
 Se esiste un punto di accomulazione, esiste una successione che gli converge
 Teorema della Permanenza del Segno
+Insieme stella implica insieme semplicemente connesso
 Composizione di Funzioni Continue è ancora una funzione continua
 Teorema degli Zeri
 La sfera Aperta è un insieme Convesso 

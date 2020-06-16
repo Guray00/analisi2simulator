@@ -1,4 +1,5 @@
 .env
+deploy.command
 package-lock.json
 .users
 deploy.sh

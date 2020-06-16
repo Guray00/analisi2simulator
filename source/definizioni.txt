@@ -1,6 +1,8 @@
 Punto di frontiera 
 Forma chiusa
+Distanza metrica
 Insieme connesso
+Insieme semplicemente connesso
 Funzione limitata
 Forma lineare
 Retta tangente ad una curva regolare
@@ -76,3 +78,6 @@ Integrale di campo
 Coordinate polari e sferiche 
 Punto di max/min globali
 Campo associato
+Rotore
+Campo irrotazionale
+Omotopie
