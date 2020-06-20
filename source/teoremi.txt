@@ -7,7 +7,7 @@ Teorema degli Zeri
 La sfera Aperta è un insieme Convesso 
 Divergenza dei polinomi non costanti
 Esistenza del minimo dei polinomi divergenti
-Teorema di Hermite(?)
+Teorema di Hermite
 Teorema Fondamentale Dell'Algebra
 Convergenza delle @-omogenee (CN / CS)
 Convergenza delle 0-omogenee

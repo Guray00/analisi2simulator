@@ -1,27 +1,38 @@
-Punto di frontiera 
-Forma chiusa
+Successione
+Successione di vettori convergente
+Successione di vettori divergente
+Successione limitata
+Successione non limitata
 Distanza metrica
+Insieme non limitato
+Insieme limitato
 Insieme connesso
 Insieme semplicemente connesso
+Insieme aperto
+Insieme chiuso
+Insieme compatto
+Insieme di livello
+Insieme cono
+Insieme stella
+Convessità
+Sfera aperta
+Punto interno
+Punto esterno
+Punto isolato
+Punto di frontiera
+Punto di accumulazione
 Funzione limitata
+Funzione oscillante
+Funzione continua
+Funzione composta
 Forma lineare
 Retta tangente ad una curva regolare
-Insieme chiuso
-Funzione limitata
-Insieme limitato
-Successione non limitata
 Differenziabilità
 Forma esatta
 superficie parametrica
-Insieme cono
-Successione limitata
 Matrice Jacobiana
-Punto esterno
-Successione di vettori convergente
-Convessità
-Insieme di livello
 Limiti (Tutte le tipologie)
-Teorema di Weierstrass
+Teorema di Weierstrass del max e min
 Limiti di forme quadratiche
 Stella
 Funzione α-omogenea
@@ -30,6 +41,8 @@ Potenze di funzioni omogenee
 Condizione di Cauchy
 Punto di minimo locale
 Punto di massimo locale
+Punto di massimo globale
+Punto di minimo globale
 Derivata direzionale
 Derivata parziale
 Derivate successive
@@ -41,14 +54,12 @@ Direzione di massima pendenza
 Retta tangente 
 Partizione
 Poligonale
+Curva parametrica
 Curva semplice (senza fiocchi)
 Curva chiusa
 Curva regolare
 Curva generalmente regolare (a tratti)
 Curva rettificabile
-Curva parametrica
-Curva parametrica regolare
-Curva parametrica chiusa
 Lunghezza di una curva 
 Lunghezza della poligonale inscritta un una curva
 Integrale curvilineo
@@ -66,18 +77,11 @@ Teorema (formula) Fubini-Tonelli
 Dominio normale rispetto all’asse X
 Dominio normale rispetto all’asse Y
 Cambio di variabili (Integrali)
-Punto interno
-Punto di accumulazione
-Punto isolato
-Insieme compatto
-Distanza vettoriale 
-Sfera aperta
 Piano tangente
 Spazio tangente 
 Integrale di campo
 Coordinate polari e sferiche 
-Punto di max/min globali
 Campo associato
 Rotore
-Campo irrotazionale
+Campo irrotazionale e forma chiusa
 Omotopie
