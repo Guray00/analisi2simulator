@@ -86,3 +86,5 @@ Rotore
 Campo irrotazionale e forma chiusa
 Omotopie
 Vettore normale alla superficie parametrica regolare
+
+
