@@ -1,4 +1,4 @@
-Verificare differenziabilità di una funzione
+Studiare la differenziabilità di una funzione in un punto
 Direzione di massima pendenza di una funzione
 Applicazione del th. di inversione locale
 Calcolare l'integrale curvilineo
@@ -10,7 +10,7 @@ Trovare il piano tangente al sostegno di una superficie parametrica in un punto
 Calcolare l'area associata a una superficie parametrica
 Calcolare il piano tangente a un grafico in un punto
 Calcolare gli estremi di una funzione su un insieme con i moltiplicatori di Lagrange
-Calcolare l'area racchiusa da una curva con t in un intervallo
+Calcolare l'area compresa tra una curva e l'asse x
 Verificare che un campo è irrotazionale o integrabile
 Limiti di forme quadratiche
 Equazione parametrica della tangente a una curva in t0
@@ -26,3 +26,4 @@ Lunghezza di un grafico
 Trovare il versore di una funzione in un punto
 Trovare il vettore tangente e normale a una curva
 Polinomio di Taylor
+Area della corona circolare compresa tra due circonferenze
