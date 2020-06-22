@@ -1,4 +1,4 @@
-require('dotenv').config() 
+require('dotenv').config();
 const fs = require('fs');
 const util = require('util');
 
@@ -69,6 +69,9 @@ async function simulazione(){
         output+="<b>-</b> "+i+"\n"
     })
 
+    output+="\n <b>Esercizio</b>\n<b>-</b> " +(await getEsercizio() + "\n")
+
+
     output+="\n <b>Teorema</b>\n<b>-</b> " +(await getTeorema())
 
 
@@ -115,7 +118,7 @@ const commands = Telegraf.Extra
     .markup((m) => m.keyboard([
         [m.callbackButton('Simulazione')],
         [m.callbackButton('Definizione'), m.callbackButton('Teorema')], 
-        [m.callbackButton('Lista Def'), m.callbackButton('Lista Th')],
+        [m.callbackButton('Lista Def'), m.callbackButton('Lista Th'), m.callbackButton('Lista Es')],
         [m.callbackButton("Segnala Definizione / Teorema")]
     ]))
 
@@ -160,6 +163,11 @@ bot.command("listadef", async (ctx) =>{
     ctx.replyWithHTML("<b>Definizioni</b>\n"+data)
 })
 
+bot.command("listaes", async (ctx) =>{
+    let data = await listEsercizi()
+    ctx.replyWithHTML("<b>Esercizi</b>\n"+data)
+})
+
 
 
 
@@ -184,7 +192,7 @@ bot.hears("Lista Th", async (ctx) =>{
 })
 
 bot.hears("Teorema", async (ctx) =>{
-    ctx.reply(await getTeorema())
+    ctx.reply(await getTeorema(), commands)
 })
 
 bot.hears("Lista Def", async (ctx) =>{
@@ -192,8 +200,14 @@ bot.hears("Lista Def", async (ctx) =>{
     ctx.replyWithHTML("<b>Definizioni</b>\n"+data)
 })
 
+
+bot.hears("Lista Es", async (ctx) =>{
+    let data = await listEsercizi()
+    ctx.replyWithHTML("<b>Esercizi</b>\n"+data)
+})
+
 bot.hears("Segnala Definizione / Teorema", async (ctx) =>{
-    ctx.reply("Ciao! Visto che anche noi stiamo studiando analisi2, mettere qui un trigger implicava studiare meno analisi... Quindi, please puoi scrivere a @gray00 o sul gruppo di @inginfunipi segnalando cosa manca? Grazie ❤️");
+    ctx.reply("Ciao! Visto che anche noi stiamo studiando analisi2, mettere qui un trigger implicava studiare meno analisi... Quindi, please puoi scrivere a @gray00 o sul gruppo di @inginfunipi segnalando cosa manca? Grazie ❤️", commands);
 })
 
 bot.launch()
