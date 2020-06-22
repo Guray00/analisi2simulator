@@ -24,17 +24,32 @@ async function getTeorema(){
     let n = Math.floor(Math.random() * data.length)
 
     while (data[n] == "" || data[n]==" " || data[n]=="\n") n = Math.floor(Math.random() * data.length)
-
     return data [n];
 }
 
+async function getEsercizio(){
+    data = await (await readFile('./source/esercizi.txt',"utf8")).split("\n")
+    let n = Math.floor(Math.random() * data.length)
+
+    while (data[n] == "" || data[n]==" " || data[n]=="\n") n = Math.floor(Math.random() * data.length)
+    return data [n];
+}
+
+
 async function listTeoremi(){
     data = await (await readFile('./source/teoremi.txt',"utf8"))
+    data+="\n\nI teoremi segnati con * sono stati chiesti all'orale (in aggiornamento)."
     return data
 }
 
 async function listDefinizioni(){
     data = await (await readFile('./source/definizioni.txt',"utf8"))
+    data+="\n\nLe definizioni segnate con * sono state chiese all'orale (in aggiornamento)."
+    return data
+}
+
+async function listEsercizi(){
+    data = await (await readFile('./source/esercizi.txt',"utf8"))
     return data
 }
 
@@ -110,25 +125,6 @@ bot.start((ctx) => ctx.reply('Ciao! Benvenuto, seleziona un comando dalla tastie
 bot.help((ctx) => ctx.reply('Per eseguire un comando utilizza la tastiera o digita /+comando', commands))
 
 //commands
-
-/*
-bot.command("addth", (ctx)=>{
-    //console.log(ctx.message.from.id)
-    if(ctx.message.from.id != "163506608") return
-    fs.appendFile('./source/teoremi.txt', "\n"+ctx.message.text.replace("/addth ", ""), function (err) {
-        if (err) throw err;
-        console.log('Aggiunto!');
-    });
-})
-
-bot.command("adddef", (ctx)=>{
-    //console.log(ctx.message.from.id)
-    if(ctx.message.from.id != "163506608") return
-    fs.appendFile('./source/definizioni.txt', "\n"+ctx.message.text.replace("/addth ", ""), function (err) {
-        if (err) throw err;
-        console.log('Aggiunto!');
-    });
-})*/
 
 bot.command("users", async(ctx)=>{
     //console.log(ctx.message.from.id)

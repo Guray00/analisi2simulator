@@ -27,7 +27,5 @@ Lunghezza di curve equivalenti
 Integrale di Campi su Curve Equivalenti
 A integrabile se e solo se l'integrale curvilineo non dipende dal cammino (CN / CS = teorema di torricelli)
 A integrabile di classe C^1 implica campo Irrotazionale
-Enunciato del teorema d'invarianza Omotopica
-Insieme Convesso implica insieme Stella
 Se un insieme è aperto connesso, e il gradiente di f sull'insieme è nullo, la f è costante
 Enunciato Cambio di Variabile 

@@ -1,0 +1,4 @@
+Differenziabilità di una funzione
+Direzione di massima pendenza di una funzione
+Applicazione del th. di inversione locale
+Come calcoli l'integrale curvilineo?

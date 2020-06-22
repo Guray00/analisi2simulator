@@ -29,7 +29,7 @@ Forma lineare
 Retta tangente ad una curva regolare
 Differenziabilità
 Forma esatta
-superficie parametrica
+superficie parametrica regolare
 Matrice Jacobiana
 Limiti (Tutte le tipologie)
 Teorema di Weierstrass del max e min
@@ -86,5 +86,9 @@ Rotore
 Campo irrotazionale e forma chiusa
 Omotopie
 Vettore normale alla superficie parametrica regolare
-
+Curva non rettificabile di classe C0
+Integrale di superficie
+Ascissa curvilinea
+Divergenza di un campo
+Integrabilità
 
