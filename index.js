@@ -96,7 +96,9 @@ bot.use(async (ctx, next) => {
     await next()
     const ms = new Date() - start
     
-    let usr = ctx.message.from.username
+	if (ctx.message == undefined) return; //c'è una condizione a quanto pare in cui message è undefined, faceva crashare
+
+    let usr = ctx.message.from.username;
 
     if (usr == undefined) usr = "id->"+ctx.message.from.id
     else usr = "@"+usr
@@ -112,6 +114,7 @@ bot.use(async (ctx, next) => {
     }
     
 })
+
 
 const commands = Telegraf.Extra
     .markdown()
@@ -175,6 +178,8 @@ bot.command("listaes", async (ctx) =>{
     hears
 
 ********************************************/ 
+
+
 
 bot.hears("Definizione", async (ctx) =>{
     ctx.reply(await getDefinition())
